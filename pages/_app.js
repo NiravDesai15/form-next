@@ -1,16 +1,15 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Development_plan'
-import './Overall_Evaluation'
-import './Performance_Evaluation'
-import './Training_Program'
-import { useRouter } from 'next/router';
-import './custom_PE.css'
-import 'antd/dist/antd.css';
+import '../pages/custom.css'
+import './login'
+import './per'
+import './pmf'
+import '../pages/logincustom.css'
+import '../pages/percustom.css'
+import '../pages/pmfcustom.css'
+
+
 const app = ({Component,pageProps}) => {
-  
-  const route=useRouter()
-  console.log('route',route.query.id)
   return (
     <div>
         <Component{...pageProps}/>
